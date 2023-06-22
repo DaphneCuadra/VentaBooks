@@ -19,5 +19,15 @@ while True:
         fu.printv("BÚSQUEDA")
     elif opcion==3:
         fu.printv("CERTIFICADOS")
+        print("1) Criticas")
+        print("2) Detalles")
+        cert = int(input("Seleccione: "))
+
+        if cert==1:
+            fu.printv("Certificado Criticas")
+        elif cert==2:
+            fu.printv("Certificado Detalle")
+        else:
+            fu.printr("Opción Inválida")
     else:
         fu.printr("Opción No Válida")
